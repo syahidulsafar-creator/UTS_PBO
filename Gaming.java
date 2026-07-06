@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package UTS.PBO;
+
+/**
+ *
+ * @author USER
+ */
+public class Gaming extends Laptop{
+    private String kartuGrafis;
+    private int refreshRate;
+    
+    public Gaming() {
+        super();
+        this.kartuGrafis = "Integrated";
+        this.refreshRate = 40;
+        
+    }
+
+    public Gaming(String merek, int tahunProduksi, int garansi,
+        int ukuranLayar, int kapasitasRAM,
+        String kartuGrafis, int refreshRate){
+        super(merek, tahunProduksi, garansi, ukuranLayar, kapasitasRAM);
+        this.kartuGrafis = kartuGrafis;
+        this.refreshRate = refreshRate;
+        
+    }
+
+        public String getKartuGrafis() { 
+            return kartuGrafis;
+        }
+        public void setKartuGrafis(String kartuGrafis) { 
+            this.kartuGrafis = kartuGrafis;
+            
+        }
+        public int getRefreshRate() {
+            return refreshRate;
+        }
+        public void setRefreshRate(int refreshRate) { 
+            this.refreshRate = refreshRate;
+        
+        }
+
+        @Override
+        public void cetak() {
+        super.cetak();
+        System.out.println("Kartu Grafis   : " + kartuGrafis);
+        System.out.println("Refresh Rate   : " + refreshRate + " Hz");
+    
+    }
+}
