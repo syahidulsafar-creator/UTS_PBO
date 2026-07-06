@@ -101,13 +101,13 @@ public class ElektronikDemo {
                     }
                     break;
 
-                case 0:
-                    System.out.println("PROGRAM SELESAII");
+                case 7:
+                    System.out.println("PROGRAM SELESAI");
                     lanjut = false;
                     break;
 
                 default:
-                    System.out.println("PILIAN TIDAK VALID!!");
+                    System.out.println("PILIHAN TIDAK VALID!!");
                     break;
                     
             }
